@@ -1,0 +1,131 @@
+
+================================================================================
+软件：livestudio
+本次测试结果如下：
+
+系统全局：
+-------------------------
+CPU占用: 31.74%
+GPU 3D 占用: 
+  Intel(R)_Iris(R)_Xe_Graphics: 26.91679%
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0%
+GPU High Priority 3D 占用: 
+
+GPU Video Encode 占用：
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0.00166%
+GPU Video Codec 占用：
+
+GPU Video Decode 占用： 
+  Intel(R)_Iris(R)_Xe_Graphics: 0.00119%
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0.00206%
+GPU Graphics 占用：
+
+GPU 占用率（驱动）：
+  Intel(R)_Iris(R)_Xe_Graphics: 0%
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 35.27219%
+内存占用： 21920.18MB
+CPU 降频时间比例：0.591715976331361%
+
+livestudio:
+-------------------------
+CPU占用: 1.03%
+GPU 3D 占用: 
+  Intel(R)_Iris(R)_Xe_Graphics: 0.07665%
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 14.56492%
+GPU High Priority 3D 占用: 
+
+GPU Video Encode 占用：
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0%
+GPU Video Codec 占用：
+
+GPU Video Decode 占用： 
+  Intel(R)_Iris(R)_Xe_Graphics: 0%
+  NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0%
+GPU Graphics 占用：
+
+内存占用： 848MB
+磁盘读出： 4.71MB/s
+磁盘写入： 3.72MB/s
+
+渲染帧率： 0
+主画布编码帧率： 0
+主画布推流帧率： 0
+从画布编码帧率： 0
+从画布推流帧率： 0
+相机渲染帧率：0
+相机 effect 渲染帧率：0
+相机平均耗时: 0
+相机平均 effect 耗时: 0
+相机平均前处理耗时: 0
+相机平均 effect 算法阶段耗时: 0
+相机平均 effect 渲染阶段耗时: 0
+相机平均 effect 环境转换耗时: 0
+
+平均 meta_video_bitrate: 0
+平均 meta_video_bitrate_1: 0
+平均 real_push_bitrate: 0
+平均 real_push_bitrate_1: 0
+
+平均 ui 帧率达成率：0
+平均 ui 未卡顿时长占比：0
+
+平均 latency:  0
+
+gpu_3d_avg
+------
+gpudetect_Intel(R)_Iris(R)_Xe_Graphics: 0.06834
+gpudetect_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0.10599
+mediasdk_server_Intel(R)_Iris(R)_Xe_Graphics: 0.00831
+mediasdk_server_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 14.45893
+parfait_crash_handler_Intel(R)_Iris(R)_Xe_Graphics: 0
+parfait_crash_handler_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+tiktok_live_studio_Intel(R)_Iris(R)_Xe_Graphics: 0
+tiktok_live_studio_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+
+gpu_video_decode_avg
+------
+gpudetect_Intel(R)_Iris(R)_Xe_Graphics: 0
+gpudetect_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+mediasdk_server_Intel(R)_Iris(R)_Xe_Graphics: 0
+mediasdk_server_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+parfait_crash_handler_Intel(R)_Iris(R)_Xe_Graphics: 0
+parfait_crash_handler_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+tiktok_live_studio_Intel(R)_Iris(R)_Xe_Graphics: 0
+tiktok_live_studio_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+
+gpu_video_encode_avg
+------
+gpudetect_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+mediasdk_server_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+parfait_crash_handler_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+tiktok_live_studio_NVIDIA_GeForce_RTX_3060_Laptop_GPU: 0
+
+cpu_avg
+------
+gpudetect: 0.00368
+mediasdk_server: 0.18996
+parfait_crash_handler: 0
+tiktok_live_studio: 0.83734
+
+memory_avg
+------
+gpudetect: 44.85MB
+mediasdk_server: 120.59MB
+parfait_crash_handler: 2.91MB
+tiktok_live_studio: 679.65MB
+
+io_read_avg
+------
+gpudetect: 0
+mediasdk_server: 934.11523
+parfait_crash_handler: 0
+tiktok_live_studio: 4938770.14872
+
+io_write_avg
+------
+gpudetect: 0
+mediasdk_server: 3748.07253
+parfait_crash_handler: 0
+tiktok_live_studio: 3893417.33869
+================================================================================
+    

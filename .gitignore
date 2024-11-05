@@ -1,5 +1,6 @@
 .idea
 .venv
 __pycache__
-live_studio_performance/original-data/*
-live_studio_performance/output/*
+/live_studio_performance/original-data/*
+/live_studio_performance/output/*
+/data/*
