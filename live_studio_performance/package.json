@@ -1,0 +1,47 @@
+{
+  "name": "live_studio_performance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@code.byted.org:tiktok/live_studio_performance.git",
+  "author": "chenjianguang <chenjianguang@bytedance.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ts-node ./src/index.ts",
+    "build": "node ./scripts/bundle.js",
+    "calc": "cross-env NODE_ENV=development ts-node ./src/calc.ts",
+    "calc-obs": "cross-env NODE_ENV=development ts-node ./src/calc-obs.ts"
+  },
+  "dependencies": {
+    "@seald-io/nedb": "^4.0.0",
+    "csv-stringify": "^6.2.3",
+    "dayjs": "^1.11.7",
+    "ffi-napi": "^4.0.3",
+    "inquirer": "^8.2.5",
+    "json-bigint": "^1.0.0",
+    "lodash": "^4.17.21",
+    "mkdirp": "^3.0.0",
+    "nedb": "^1.8.0",
+    "open": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/ffi-napi": "^4.0.7",
+    "@types/inquirer": "^8.2.5",
+    "@types/json-bigint": "^1.0.1",
+    "@types/lodash": "^4.14.191",
+    "@types/nedb": "^1.8.13",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "adm-zip": "^0.5.10",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.33.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "fs-extra": "^10.0.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.9.5"
+  }
+}
