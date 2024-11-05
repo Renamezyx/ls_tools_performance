@@ -93,7 +93,8 @@ const fpsKeys = [
     'encoder_fps_1',
     'send_fps_1',
     'camera_fps',
-    'camera_effect_fps',
+    'camera_before_effect_fps',
+    'camera_after_effect_fps',
     'latency'
 ];
 const bitrateKeys = [
