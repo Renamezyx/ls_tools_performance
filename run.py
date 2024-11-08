@@ -1,3 +1,4 @@
+import datetime
 import os.path
 import sys
 from scripts import collection, calc
@@ -19,6 +20,12 @@ if __name__ == '__main__':
             path = get_latest_file(directory=os.path.join(get_project_root()), extension=".zip")
             print(f"正在上传...{path}")
             send_data(path)
+        elif param_1 == ".":
+            print("开始采集&生成&上传(默认livestudio,300s)...")
+            print("开启采集...")
+            param_2 = sys.argv[2]
+            collection("liveStudio", int(param_2))
+            calc(str(int(datetime.datetime.now().timestamp())))
         else:
             print("unknown")
     else:
