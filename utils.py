@@ -1,13 +1,13 @@
 import glob
 import os
 import shutil
-import subprocess
 import zipfile
 
 import requests
+from requests import Response
 
-from commd_tools import get_project_root, execute_command
-from config import api_file_upload
+from commd_tools import execute_command
+from config import api_file_upload, get_project_root
 
 
 def get_latest_file(directory, extension="*"):
@@ -92,19 +92,22 @@ def delete_files_in_directory(directory):
 def get_device_id():
     cmd = "wmic csproduct get UUID"
     output, code = execute_command(cmd)
+    res = None
     if len(output.split("\n")) > 1 and code == 0:
-        return output.split("\n")[:-1]
-    return None
+        res = output.replace(" ", "").replace("\r", "")
+        res = res.split("\n")
+        res = [x for x in res if len(x) > 0][-1]
+    return res
 
 
-def send_data(path):
+def send_data(path) -> Response:
     with open(path, 'rb') as file:
         files = {'file': file}
         data = {'device_id': get_device_id()}
         res = requests.post(url=api_file_upload, data=data,
                             files=files, verify=False)
-        return res.status_code
+        return res
 
 
 if __name__ == '__main__':
-    get_device_id()
+    print(get_device_id())
