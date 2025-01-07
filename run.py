@@ -21,7 +21,7 @@ if __name__ == '__main__':
             print(f"正在上传...{path}")
             send_data(path)
         elif param_1 == ".":
-            print("开始采集&生成&上传(默认livestudio,300s)...")
+            print("开始采集&生成&上传(默认livestudio)...")
             print("开启采集...")
             param_2 = sys.argv[2]
             collection("liveStudio", int(param_2))
